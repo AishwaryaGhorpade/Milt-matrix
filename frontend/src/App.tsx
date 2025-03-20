@@ -1,5 +1,5 @@
 import './App.css';
-import { SignIn, SignUp, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignIn, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/home';
