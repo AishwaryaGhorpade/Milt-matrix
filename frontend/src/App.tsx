@@ -1,4 +1,5 @@
 import './App.css';
+import { SignIn, SignUp, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/home';
@@ -12,6 +13,10 @@ import CreateUserForm from "./components/createUserForm";
 function App() {
   return (
     <>
+    <SignedOut>
+       <SignIn/>
+    </SignedOut>
+    <SignedIn>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +26,9 @@ function App() {
         <Route path="/progress" element={<Progress />} />
         <Route path="/addUser" element={<CreateUserForm />} />
         {/* <Route path="/miltonians/miltonians/profile/:userId" element={<ProfilePage/>} /> */}
+
       </Routes>
+      </SignedIn>
     </>
   );
 }

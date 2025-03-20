@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { UserButton } from "@clerk/clerk-react";
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -69,6 +70,7 @@ function Navigation() {
                             <Link className="font-medium text-sm text-gray-800 hover:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500" to="/progress">
                                 Progress
                             </Link>
+                            <UserButton/>
                         </div>
                     </div>
                 </div>
