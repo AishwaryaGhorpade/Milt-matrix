@@ -39,11 +39,11 @@ export default function CreateUserForm() {
 
   return (
     <div className="border p-4 rounded-md shadow-md w-96">
-      <h2 className="text-lg font-semibold mb-3">Create a New User</h2>
+      <h2 className="text-lg font-semibold mb-3 ">Create a New User</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium">First Name</label>
+          <label className="block text-sm font-medium text-start">First Name</label>
           <input
             type="text"
             name="firstName"
@@ -55,7 +55,7 @@ export default function CreateUserForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium">Last Name</label>
+          <label className="block text-sm font-medium text-start">Last Name</label>
           <input
             type="text"
             name="lastName"
@@ -67,7 +67,7 @@ export default function CreateUserForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium">Email Address</label>
+          <label className="block text-sm font-medium text-start">Email Address</label>
           <input
             type="email"
             name="emailAddress"
@@ -79,7 +79,7 @@ export default function CreateUserForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium">Password</label>
+          <label className="block text-sm font-medium text-start">Password</label>
           <input
             type="password"
             name="password"
@@ -94,7 +94,7 @@ export default function CreateUserForm() {
           {/* <button type="button" className="border px-3 py-2 rounded hover:bg-gray-100">
             Cancel
           </button> */}
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mx-auto">
             Create User
           </button>
         </div>

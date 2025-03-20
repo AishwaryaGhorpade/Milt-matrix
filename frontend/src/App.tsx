@@ -7,6 +7,7 @@ import Committee from './pages/committee';
 import Activities from './pages/activities';
 import Progress from './pages/progress';
 import CreateUserForm from "./components/createUserForm";
+// import ProfilePage from './pages/profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/addUser" element={<CreateUserForm />} />
+        {/* <Route path="/miltonians/miltonians/profile/:userId" element={<ProfilePage/>} /> */}
       </Routes>
     </>
   );

@@ -210,7 +210,7 @@ export default function Miltonians() {
   return (
     <div className="-m-1.5 overflow-auto w-full min-h-[30rem] my-10 mx-auto">
       <div className="flex flex-col">
-        <div className="-m-1.5 overflow-x-auto">
+        <div className="-m-1.5 overflow-x-auto mx-auto">
           <div className="p-1.5 min-w-full inline-block align-middle">
             <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-neutral-800 dark:border-neutral-700">
               {/* Header Section */}
@@ -317,13 +317,13 @@ export default function Miltonians() {
                             to={`./miltonians/edituser/${user.id}`}
                             className="text-sm bg-blue-500 text-white rounded-lg px-2 py-1"
                           >
-                            edit
+                            Edit
                           </Link>
                           <button
                             onClick={() => deleteUser(user.id)}
                             className="text-sm bg-red-500 text-white rounded-lg px-2 py-1"
                           >
-                            delete
+                            Delete
                           </button>
                         </div>
                       </td>
